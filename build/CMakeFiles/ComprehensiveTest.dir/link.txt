@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby@3.1/lib CMakeFiles/ComprehensiveTest.dir/test/comprehensive_performance_test.cpp.o -o ComprehensiveTest

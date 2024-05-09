@@ -117,118 +117,115 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named QCache
+# Target rules for targets named ComprehensiveTest
 
 # Build rule for target.
-QCache: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QCache
-.PHONY : QCache
+ComprehensiveTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ComprehensiveTest
+.PHONY : ComprehensiveTest
 
 # fast build rule for target.
-QCache/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/build
-.PHONY : QCache/fast
+ComprehensiveTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/build
+.PHONY : ComprehensiveTest/fast
 
 #=============================================================================
-# Target rules for targets named CacheTest1
+# Target rules for targets named BasicTest
 
 # Build rule for target.
-CacheTest1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CacheTest1
-.PHONY : CacheTest1
+BasicTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BasicTest
+.PHONY : BasicTest
 
 # fast build rule for target.
-CacheTest1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/build
-.PHONY : CacheTest1/fast
+BasicTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/build
+.PHONY : BasicTest/fast
 
 #=============================================================================
-# Target rules for targets named CacheTest2
+# Target rules for targets named DebugHashLfu
 
 # Build rule for target.
-CacheTest2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CacheTest2
-.PHONY : CacheTest2
+DebugHashLfu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DebugHashLfu
+.PHONY : DebugHashLfu
 
 # fast build rule for target.
-CacheTest2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/build
-.PHONY : CacheTest2/fast
+DebugHashLfu/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/build
+.PHONY : DebugHashLfu/fast
 
-test/cache_test1.o: test/cache_test1.cpp.o
-.PHONY : test/cache_test1.o
-
-# target to build an object file
-test/cache_test1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/test/cache_test1.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/test/cache_test1.cpp.o
-.PHONY : test/cache_test1.cpp.o
-
-test/cache_test1.i: test/cache_test1.cpp.i
-.PHONY : test/cache_test1.i
-
-# target to preprocess a source file
-test/cache_test1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/test/cache_test1.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/test/cache_test1.cpp.i
-.PHONY : test/cache_test1.cpp.i
-
-test/cache_test1.s: test/cache_test1.cpp.s
-.PHONY : test/cache_test1.s
-
-# target to generate assembly for a file
-test/cache_test1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/test/cache_test1.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/test/cache_test1.cpp.s
-.PHONY : test/cache_test1.cpp.s
-
-test/cache_test2.o: test/cache_test2.cpp.o
-.PHONY : test/cache_test2.o
+test/basic_functionality_test.o: test/basic_functionality_test.cpp.o
+.PHONY : test/basic_functionality_test.o
 
 # target to build an object file
-test/cache_test2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/test/cache_test2.cpp.o
-.PHONY : test/cache_test2.cpp.o
+test/basic_functionality_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/test/basic_functionality_test.cpp.o
+.PHONY : test/basic_functionality_test.cpp.o
 
-test/cache_test2.i: test/cache_test2.cpp.i
-.PHONY : test/cache_test2.i
+test/basic_functionality_test.i: test/basic_functionality_test.cpp.i
+.PHONY : test/basic_functionality_test.i
 
 # target to preprocess a source file
-test/cache_test2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/test/cache_test2.cpp.i
-.PHONY : test/cache_test2.cpp.i
+test/basic_functionality_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/test/basic_functionality_test.cpp.i
+.PHONY : test/basic_functionality_test.cpp.i
 
-test/cache_test2.s: test/cache_test2.cpp.s
-.PHONY : test/cache_test2.s
+test/basic_functionality_test.s: test/basic_functionality_test.cpp.s
+.PHONY : test/basic_functionality_test.s
 
 # target to generate assembly for a file
-test/cache_test2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/test/cache_test2.cpp.s
-.PHONY : test/cache_test2.cpp.s
+test/basic_functionality_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/test/basic_functionality_test.cpp.s
+.PHONY : test/basic_functionality_test.cpp.s
 
-test/main.o: test/main.cpp.o
-.PHONY : test/main.o
+test/comprehensive_performance_test.o: test/comprehensive_performance_test.cpp.o
+.PHONY : test/comprehensive_performance_test.o
 
 # target to build an object file
-test/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/test/main.cpp.o
-.PHONY : test/main.cpp.o
+test/comprehensive_performance_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/test/comprehensive_performance_test.cpp.o
+.PHONY : test/comprehensive_performance_test.cpp.o
 
-test/main.i: test/main.cpp.i
-.PHONY : test/main.i
+test/comprehensive_performance_test.i: test/comprehensive_performance_test.cpp.i
+.PHONY : test/comprehensive_performance_test.i
 
 # target to preprocess a source file
-test/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/test/main.cpp.i
-.PHONY : test/main.cpp.i
+test/comprehensive_performance_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/test/comprehensive_performance_test.cpp.i
+.PHONY : test/comprehensive_performance_test.cpp.i
 
-test/main.s: test/main.cpp.s
-.PHONY : test/main.s
+test/comprehensive_performance_test.s: test/comprehensive_performance_test.cpp.s
+.PHONY : test/comprehensive_performance_test.s
 
 # target to generate assembly for a file
-test/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/test/main.cpp.s
-.PHONY : test/main.cpp.s
+test/comprehensive_performance_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/test/comprehensive_performance_test.cpp.s
+.PHONY : test/comprehensive_performance_test.cpp.s
+
+test/debug_hash_lfu.o: test/debug_hash_lfu.cpp.o
+.PHONY : test/debug_hash_lfu.o
+
+# target to build an object file
+test/debug_hash_lfu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/test/debug_hash_lfu.cpp.o
+.PHONY : test/debug_hash_lfu.cpp.o
+
+test/debug_hash_lfu.i: test/debug_hash_lfu.cpp.i
+.PHONY : test/debug_hash_lfu.i
+
+# target to preprocess a source file
+test/debug_hash_lfu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/test/debug_hash_lfu.cpp.i
+.PHONY : test/debug_hash_lfu.cpp.i
+
+test/debug_hash_lfu.s: test/debug_hash_lfu.cpp.s
+.PHONY : test/debug_hash_lfu.s
+
+# target to generate assembly for a file
+test/debug_hash_lfu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/test/debug_hash_lfu.cpp.s
+.PHONY : test/debug_hash_lfu.cpp.s
 
 # Help Target
 help:
@@ -238,18 +235,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CacheTest1"
-	@echo "... CacheTest2"
-	@echo "... QCache"
-	@echo "... test/cache_test1.o"
-	@echo "... test/cache_test1.i"
-	@echo "... test/cache_test1.s"
-	@echo "... test/cache_test2.o"
-	@echo "... test/cache_test2.i"
-	@echo "... test/cache_test2.s"
-	@echo "... test/main.o"
-	@echo "... test/main.i"
-	@echo "... test/main.s"
+	@echo "... BasicTest"
+	@echo "... ComprehensiveTest"
+	@echo "... DebugHashLfu"
+	@echo "... test/basic_functionality_test.o"
+	@echo "... test/basic_functionality_test.i"
+	@echo "... test/basic_functionality_test.s"
+	@echo "... test/comprehensive_performance_test.o"
+	@echo "... test/comprehensive_performance_test.i"
+	@echo "... test/comprehensive_performance_test.s"
+	@echo "... test/debug_hash_lfu.o"
+	@echo "... test/debug_hash_lfu.i"
+	@echo "... test/debug_hash_lfu.s"
 .PHONY : help
 
 

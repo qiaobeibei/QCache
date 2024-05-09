@@ -63,15 +63,15 @@ CMAKE_BINARY_DIR = /Users/yuzhibogoudan/Desktop/C/QCache/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/QCache.dir/all
-all: CMakeFiles/CacheTest1.dir/all
-all: CMakeFiles/CacheTest2.dir/all
+all: CMakeFiles/ComprehensiveTest.dir/all
+all: CMakeFiles/BasicTest.dir/all
+all: CMakeFiles/DebugHashLfu.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/QCache.dir/codegen
-codegen: CMakeFiles/CacheTest1.dir/codegen
-codegen: CMakeFiles/CacheTest2.dir/codegen
+codegen: CMakeFiles/ComprehensiveTest.dir/codegen
+codegen: CMakeFiles/BasicTest.dir/codegen
+codegen: CMakeFiles/DebugHashLfu.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -79,106 +79,106 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/QCache.dir/clean
-clean: CMakeFiles/CacheTest1.dir/clean
-clean: CMakeFiles/CacheTest2.dir/clean
+clean: CMakeFiles/ComprehensiveTest.dir/clean
+clean: CMakeFiles/BasicTest.dir/clean
+clean: CMakeFiles/DebugHashLfu.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/QCache.dir
+# Target rules for target CMakeFiles/ComprehensiveTest.dir
 
 # All Build rule for target.
-CMakeFiles/QCache.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=6,7 "Built target QCache"
-.PHONY : CMakeFiles/QCache.dir/all
+CMakeFiles/ComprehensiveTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=3,4 "Built target ComprehensiveTest"
+.PHONY : CMakeFiles/ComprehensiveTest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/QCache.dir/rule: cmake_check_build_system
+CMakeFiles/ComprehensiveTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QCache.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ComprehensiveTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles 0
-.PHONY : CMakeFiles/QCache.dir/rule
+.PHONY : CMakeFiles/ComprehensiveTest.dir/rule
 
 # Convenience name for target.
-QCache: CMakeFiles/QCache.dir/rule
-.PHONY : QCache
+ComprehensiveTest: CMakeFiles/ComprehensiveTest.dir/rule
+.PHONY : ComprehensiveTest
 
 # codegen rule for target.
-CMakeFiles/QCache.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=6,7 "Finished codegen for target QCache"
-.PHONY : CMakeFiles/QCache.dir/codegen
+CMakeFiles/ComprehensiveTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=3,4 "Finished codegen for target ComprehensiveTest"
+.PHONY : CMakeFiles/ComprehensiveTest.dir/codegen
 
 # clean rule for target.
-CMakeFiles/QCache.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QCache.dir/build.make CMakeFiles/QCache.dir/clean
-.PHONY : CMakeFiles/QCache.dir/clean
+CMakeFiles/ComprehensiveTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComprehensiveTest.dir/build.make CMakeFiles/ComprehensiveTest.dir/clean
+.PHONY : CMakeFiles/ComprehensiveTest.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CacheTest1.dir
+# Target rules for target CMakeFiles/BasicTest.dir
 
 # All Build rule for target.
-CMakeFiles/CacheTest1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=1,2 "Built target CacheTest1"
-.PHONY : CMakeFiles/CacheTest1.dir/all
+CMakeFiles/BasicTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=1,2 "Built target BasicTest"
+.PHONY : CMakeFiles/BasicTest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CacheTest1.dir/rule: cmake_check_build_system
+CMakeFiles/BasicTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CacheTest1.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BasicTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles 0
-.PHONY : CMakeFiles/CacheTest1.dir/rule
+.PHONY : CMakeFiles/BasicTest.dir/rule
 
 # Convenience name for target.
-CacheTest1: CMakeFiles/CacheTest1.dir/rule
-.PHONY : CacheTest1
+BasicTest: CMakeFiles/BasicTest.dir/rule
+.PHONY : BasicTest
 
 # codegen rule for target.
-CMakeFiles/CacheTest1.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=1,2 "Finished codegen for target CacheTest1"
-.PHONY : CMakeFiles/CacheTest1.dir/codegen
+CMakeFiles/BasicTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=1,2 "Finished codegen for target BasicTest"
+.PHONY : CMakeFiles/BasicTest.dir/codegen
 
 # clean rule for target.
-CMakeFiles/CacheTest1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest1.dir/build.make CMakeFiles/CacheTest1.dir/clean
-.PHONY : CMakeFiles/CacheTest1.dir/clean
+CMakeFiles/BasicTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BasicTest.dir/build.make CMakeFiles/BasicTest.dir/clean
+.PHONY : CMakeFiles/BasicTest.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CacheTest2.dir
+# Target rules for target CMakeFiles/DebugHashLfu.dir
 
 # All Build rule for target.
-CMakeFiles/CacheTest2.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=3,4,5 "Built target CacheTest2"
-.PHONY : CMakeFiles/CacheTest2.dir/all
+CMakeFiles/DebugHashLfu.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=5,6 "Built target DebugHashLfu"
+.PHONY : CMakeFiles/DebugHashLfu.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CacheTest2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CacheTest2.dir/all
+CMakeFiles/DebugHashLfu.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DebugHashLfu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles 0
-.PHONY : CMakeFiles/CacheTest2.dir/rule
+.PHONY : CMakeFiles/DebugHashLfu.dir/rule
 
 # Convenience name for target.
-CacheTest2: CMakeFiles/CacheTest2.dir/rule
-.PHONY : CacheTest2
+DebugHashLfu: CMakeFiles/DebugHashLfu.dir/rule
+.PHONY : DebugHashLfu
 
 # codegen rule for target.
-CMakeFiles/CacheTest2.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=3,4,5 "Finished codegen for target CacheTest2"
-.PHONY : CMakeFiles/CacheTest2.dir/codegen
+CMakeFiles/DebugHashLfu.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles --progress-num=5,6 "Finished codegen for target DebugHashLfu"
+.PHONY : CMakeFiles/DebugHashLfu.dir/codegen
 
 # clean rule for target.
-CMakeFiles/CacheTest2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CacheTest2.dir/build.make CMakeFiles/CacheTest2.dir/clean
-.PHONY : CMakeFiles/CacheTest2.dir/clean
+CMakeFiles/DebugHashLfu.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DebugHashLfu.dir/build.make CMakeFiles/DebugHashLfu.dir/clean
+.PHONY : CMakeFiles/DebugHashLfu.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
