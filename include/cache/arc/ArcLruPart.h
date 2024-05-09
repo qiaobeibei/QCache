@@ -68,7 +68,7 @@ namespace QCache {
       auto it = main_cache_.find(key);
       if (it != main_cache_.end()) {
         should_transform = updateNodeAccess(it->second);
-        value = it->second->GetValue();
+        value = it->second->getValue();
         return true;
       }
       return false;
@@ -222,7 +222,7 @@ namespace QCache {
       addToGhost(least_recent);
 
       // 从主缓存映射中移除
-      main_cache_.erase(least_recent->GetKey());
+      main_cache_.erase(least_recent->getKey());
     }
 
     /**
@@ -282,7 +282,7 @@ namespace QCache {
         return;
 
       removeFromGhost(oldest_ghost);
-      ghost_cache_.erase(oldest_ghost->GetKey());
+      ghost_cache_.erase(oldest_ghost->getKey());
     }
 
   private:

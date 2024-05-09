@@ -64,13 +64,13 @@ namespace QCache {
       checkGhostCaches(key);
 
       bool should_transform = false;
-      if (lru_part_->Get(key, value, should_transform)) {
+      if (lru_part_->get(key, value, should_transform)) {
         if (should_transform) {
-          lfu_part_->Put(key, value);
+          lfu_part_->put(key, value);
         }
         return true;
       }
-      return lfu_part_->Get(key, value);
+      return lfu_part_->get(key, value);
     }
 
     /**

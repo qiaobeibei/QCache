@@ -32,7 +32,7 @@ namespace QCache {
      * @param slice_num 分片数量，默认为线程数
      * @param max_average_freq 最大平均访问频次
      */
-    HashLfuCache(size_t capacity, int slice_num, int max_average_freq = 10) :
+    HashLfuCache(size_t capacity, int slice_num, int max_average_freq = 1000) :
       slice_num_(slice_num > 0 ? slice_num : std::thread::hardware_concurrency()), capacity_(capacity) {
       size_t slice_size = std::ceil(capacity_ / static_cast<double>(slice_num));
       for (int i = 0; i < slice_num_; ++i) {
@@ -81,7 +81,7 @@ namespace QCache {
      */
     void purge() {
       for (auto &lfu_slice : lfu_slices_) {
-        lfu_slice->purge;
+        lfu_slice->purge();
       }
     }
 
