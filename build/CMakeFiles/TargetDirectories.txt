@@ -1,5 +1,0 @@
-/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/ComprehensiveTest.dir
-/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/BasicTest.dir
-/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/DebugHashLfu.dir
-/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/edit_cache.dir
-/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/rebuild_cache.dir
