@@ -1,0 +1,5 @@
+/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/QCache.dir
+/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/CacheTest1.dir
+/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/CacheTest2.dir
+/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/edit_cache.dir
+/Users/yuzhibogoudan/Desktop/C/QCache/build/CMakeFiles/rebuild_cache.dir
