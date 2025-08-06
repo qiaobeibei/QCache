@@ -236,7 +236,7 @@ namespace QCache {
       addToGhost(least_node);
 
       // 从主缓存中移除
-      main_cache_.erase(least_node->GetKey());
+      main_cache_.erase(least_node->getKey());
     }
 
     /**
@@ -265,7 +265,7 @@ namespace QCache {
         ghost_tail_->prev_.lock()->next_ = node;
       }
       ghost_tail_->prev_ = node;
-      ghost_cache_[node->GetKey()] = node;
+      ghost_cache_[node->getKey()] = node;
     }
 
     /**
@@ -275,7 +275,7 @@ namespace QCache {
       NodePtr oldest_ghost = ghost_head_->next_;
       if (oldest_ghost != ghost_tail_) {
         removeFromGhost(oldest_ghost);
-        ghost_cache_.erase(oldest_ghost->GetKey());
+        ghost_cache_.erase(oldest_ghost->getKey());
       }
     }
 
