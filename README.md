@@ -2,7 +2,6 @@
 
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![CMake](https://img.shields.io/badge/CMake-3.28+-green.svg)](https://cmake.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 QCache是一个基于C++17实现的高性能、线程安全的缓存库，提供多种缓存算法实现，适用于各种应用场景。
 
@@ -176,10 +175,6 @@ HashLfuCache(size_t capacity, int slice_num, int max_average_freq = 1000);
 ## 🤝 贡献
 
 欢迎提交Issue和Pull Request！
-
-## 📄 许可证
-
-本项目采用MIT许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
 ## 📞 联系方式
 
